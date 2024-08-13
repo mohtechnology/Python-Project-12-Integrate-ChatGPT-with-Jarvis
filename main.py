@@ -58,7 +58,7 @@ def ai(query):
         )
         speak(response.choices[0].text.strip())
     except Exception as e:
-        speak(e)
+        print(e)
 
 def jarvis():
     while 1:
