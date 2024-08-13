@@ -49,10 +49,9 @@ def open_app(app):
         open_website(app)
 
 def ai(query):
-    import openai
-
-    openai.api_key = "Enter-Your-API-Key"
     try:
+        import openai
+        openai.api_key = "Enter-Your-API-Key"
         response = openai.Completion.create(
             engine = 'gpt-3.5-turbo',
             prompt = query
